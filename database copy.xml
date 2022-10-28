@@ -1,0 +1,27 @@
+<users>
+    <user id="1">
+        <username>Alex</username>
+        <password>Test</password>
+        <user_role>admin</user_role>
+    </user>
+    <user id="2">
+        <username>Jake</username>
+        <password>Test</password>
+        <user_role>regular</user_role>
+    </user>
+    <user id="3">
+        <username>Rory</username>
+        <password>Test</password>
+        <user_role>admin</user_role>
+    </user>
+    <user id="4">
+        <username>Mack</username>
+        <password>Test</password>
+        <user_role>limited</user_role>
+    </user>
+    <user id="5">
+        <username>Crosby</username>
+        <password>Test</password>
+        <user_role>regular</user_role>
+    </user>
+</users>
