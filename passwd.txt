@@ -1,0 +1,21 @@
+<users>
+	<user id="0">
+		<username>alexcameron</username>
+		<salt>b6d35e7bf284b51413026870bec3495ae079cabc133509205fcbfb471235ba79</salt>
+		<password>e12486b2b431b3b1ef16ac084f4c8a6084de1d7b662753b9707c1fa99d84cfe0</password>
+		<user_role>Client,Technical Support</user_role>
+	</user>
+	<user id="1">
+		<username>test</username>
+		<salt>41523f1cadd70873e3bd7b19848e6b3071702da9808a5a022c51dfa9596fb5c8</salt>
+		<password>0de5d2c15712623a17558f182dffba182c844b2283b0ba2068af69687000a909</password>
+		<user_role>Client,Premium Client</user_role>
+	</user>
+	<user id="2">
+		<username>ac</username>
+		<salt>e58b0b40a5cb78e259dca44bc754d93dc715d9eac7145c619090eb57ab885b23</salt>
+		<password>1409b33597c6f617e0a7eb4497d61fd918d0e615302a74fc3b46ff475e8b2416</password>
+		<temp_test_pw>Test123!</temp_test_pw>
+		<user_role>Client,Premium Client</user_role>
+	</user>
+</users>

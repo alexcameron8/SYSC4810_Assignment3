@@ -1,0 +1,35 @@
+<roles>
+	<role id="Client">
+		<permission access="r">account balance</permission>
+		<permission access="r">investment portfolio</permission>
+		<permission access="r">financial advisor contact details</permission>
+	</role>
+	<role id="Premium Client">
+		<permission access="rw">investment portfolio</permission>
+		<permission access="r">investment analyst contact details</permission>
+		<permission access="r">financial planner contact details</permission>
+	</role>
+	<role id="Financial Advisor">
+		<permission access="r">private consumer instruments</permission>
+	</role>
+	<role id="Financial Planner">
+		<permission access="r">money market instruments</permission>
+		<permission access="r">private consumer instruments</permission>
+	</role>
+	<role id="Investment Analyst">
+		<permission access="r">money market instruments</permission>
+		<permission access="r">private consumer instruments</permission>
+		<permission access="r">derivatives trading</permission>
+		<permission access="r">interest instruments</permission>
+	</role>
+	<role id="Technical Support">
+		<permission access="r">client information</permission>
+		<permission access="rwo">client account access</permission>
+	</role>
+	<role id="Teller">
+		<permission access="rwo">access to system between 9:00-5:00 PM</permission>
+	</role>
+	<role id="Compliance Officer">
+		<permission access="rwo">validate modifications to investment portfolios</permission>
+	</role>
+</roles>
