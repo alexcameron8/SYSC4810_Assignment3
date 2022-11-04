@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import sys
+#Import functions from other modules
 sys.path.append('./password')
 sys.path.append('./access_control_policy')
 import user, access_control_policy, password
@@ -177,7 +178,6 @@ def login_user(username, pword, login_screen):
     elif not pword:
         messagebox.showwarning('Login', 'Password field is empty.')
     else:
-        print("Login Password:", pword)
         isSuccess, message = password.verifyCredentials(username,pword)
         #User successfully added
         if isSuccess:
@@ -188,4 +188,4 @@ def login_user(username, pword, login_screen):
         else:
             messagebox.showwarning('Login', message)
 
-main_account_screen() # call the main_account_screen() function
+

@@ -127,7 +127,6 @@ def getRecords():
 
     for elem in user:
         newUserID = int(elem.attributes['id'].value)
-        print(newUserID)
     
     users_append.appendChild()
 

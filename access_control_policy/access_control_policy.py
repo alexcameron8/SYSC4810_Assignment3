@@ -6,7 +6,16 @@ from xml.dom import minidom
 roles = ["Client", "Premium Client", "Financial Advisor", "Financial Planner", "Investment Analyst", "Technical Support", "Teller", "Compliance Officer"]
 
 def getAllRoles():
-    return roles
+    roles_list = []
+    #Load environment variables (access control policy file)
+    load_dotenv()
+    ACCESS_CONTROL_POLICY = os.getenv('ACCESS_CONTROL_POLICY')
+    mydoc = minidom.parse(ACCESS_CONTROL_POLICY)
+    roles = mydoc.getElementsByTagName('role')
+    #Iterate through all roles in the access control policy file and append to a list of all roles
+    for role in roles:
+        roles_list.append(role.attributes['id'].value)
+    return roles_list
 
 def getPermissions(user_roles: list):
     #List of user permissions
@@ -20,7 +29,6 @@ def getPermissions(user_roles: list):
     roles = mydoc.getElementsByTagName('role')
     #Iterate through all roles of a given user
     for user_role in user_roles:
-        print("User role: ", user_role)
         for role in roles:
             #If a user role matches the role in the access control policy file, append the permission to the permissions file.
             if(user_role==role.attributes['id'].value):
@@ -65,3 +73,5 @@ def getRoles(username : str):
     return roles
     
     return roles
+
+getAllRoles()
