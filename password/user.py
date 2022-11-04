@@ -52,12 +52,6 @@ def addUser(userName, pword, userRole):
     pass_hash.appendChild(text)
     user.appendChild(pass_hash)
 
-    #- Create new element password
-    passw = doc.createElement("temp_test_pw")
-    text = doc.createTextNode(pword)
-    passw.appendChild(text)
-    user.appendChild(passw)
-
     #- Create new element user_role
     user_role = doc.createElement("user_role")
     text = doc.createTextNode(','.join(str(item) for item in userRole))

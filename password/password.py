@@ -113,7 +113,7 @@ def verifyCredentials(username, login_pword):
        # print(bytes.fromhex(pword))
         pwMatch = cryptpass.is_correct_password(bytes.fromhex(salt),bytes.fromhex(pword),login_pword)
         if pwMatch:
-            message = "Password matches with provided password."
+            message = ""
             isVerified = True
             return isVerified, message
         else:

@@ -47,7 +47,6 @@ def getPermissions(user_roles: list):
                     user_permissions.append(roles_str)
 
                     i +=1
-    print(user_permissions)
     return user_permissions
 
 

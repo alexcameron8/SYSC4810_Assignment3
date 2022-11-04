@@ -15,7 +15,12 @@
 		<username>ac</username>
 		<salt>e58b0b40a5cb78e259dca44bc754d93dc715d9eac7145c619090eb57ab885b23</salt>
 		<password>1409b33597c6f617e0a7eb4497d61fd918d0e615302a74fc3b46ff475e8b2416</password>
-		<temp_test_pw>Test123!</temp_test_pw>
 		<user_role>Client,Premium Client</user_role>
+	</user>
+	<user id="3">
+		<username>r</username>
+		<salt>d38ec920cf9e911271e0778e8407519b97812b14af30db0292090f26ea56f851</salt>
+		<password>950cc31a53caa6f9d6a1b56725303d6ed8e29856ccd3c0b7269b9aeb622351e3</password>
+		<user_role>Client,Investment Analyst</user_role>
 	</user>
 </users>
